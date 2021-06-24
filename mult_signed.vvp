@@ -1,0 +1,54 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fb3edd06110 .scope module, "multSigned_beh_tb" "multSigned_beh_tb" 2 12;
+ .timescale -9 -9;
+v0x7fb3edd1a530_0 .net "po", 15 0, L_0x7fb3edd1a940;  1 drivers
+v0x7fb3edd1a5e0_0 .var "x", 7 0;
+v0x7fb3edd1a690_0 .var "y", 7 0;
+S_0x7fb3edd04e50 .scope module, "m1" "multSigned_beh" 2 17, 2 2 0, S_0x7fb3edd06110;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 16 "po";
+P_0x7fb3edd05800 .param/l "size" 0 2 2, +C4<00000000000000000000000000001000>;
+v0x7fb3edd0a630_0 .net/s *"_ivl_0", 15 0, L_0x7fb3edd1a760;  1 drivers
+v0x7fb3edd1a270_0 .net/s *"_ivl_2", 15 0, L_0x7fb3edd1a860;  1 drivers
+v0x7fb3edd1a310_0 .net/s "po", 15 0, L_0x7fb3edd1a940;  alias, 1 drivers
+v0x7fb3edd1a3a0_0 .net/s "x", 7 0, v0x7fb3edd1a5e0_0;  1 drivers
+v0x7fb3edd1a430_0 .net/s "y", 7 0, v0x7fb3edd1a690_0;  1 drivers
+L_0x7fb3edd1a760 .extend/s 16, v0x7fb3edd1a5e0_0;
+L_0x7fb3edd1a860 .extend/s 16, v0x7fb3edd1a690_0;
+L_0x7fb3edd1a940 .arith/mult 16, L_0x7fb3edd1a760, L_0x7fb3edd1a860;
+    .scope S_0x7fb3edd06110;
+T_0 ;
+    %vpi_call 2 20 "$dumpfile", "multVCD" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fb3edd04e50 {0 0 0};
+    %pushi/vec4 10, 0, 8;
+    %store/vec4 v0x7fb3edd1a5e0_0, 0, 8;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x7fb3edd1a690_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 246, 0, 8;
+    %store/vec4 v0x7fb3edd1a5e0_0, 0, 8;
+    %pushi/vec4 20, 0, 8;
+    %store/vec4 v0x7fb3edd1a690_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 12, 0, 8;
+    %store/vec4 v0x7fb3edd1a5e0_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fb3edd1a690_0, 0, 8;
+    %delay 50, 0;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "mult_signed.v";

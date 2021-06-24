@@ -1,0 +1,140 @@
+[*]
+[*] GTKWave Analyzer v3.3.107 (w)1999-2020 BSI
+[*] Wed Jun 23 09:34:26 2021
+[*]
+[dumpfile] "/Users/ebinouri/Documents/UNi/VLSI/Fproject/VERILOG/E_TPU/TPU_VCD.vcd"
+[dumpfile_mtime] "Wed Jun 23 09:31:19 2021"
+[dumpfile_size] 19713
+[savefile] "/Users/ebinouri/Documents/UNi/VLSI/Fproject/VERILOG/E_TPU/TPU_4B4_RES.gtkw"
+[timestart] 0
+[size] 1440 855
+[pos] -1 0
+*-7.212388 289 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tpu_tb.
+[treeopen] tpu_tb.T1.
+[treeopen] tpu_tb.T1.genblk1[1].PEij[1].macij.MAC_UNIT.
+[treeopen] tpu_tb.T1.genblk1[1].PEij[2].macij.MAC_UNIT.
+[treeopen] tpu_tb.T1.genblk1[1].PEij[3].
+[treeopen] tpu_tb.T1.genblk1[1].PEij[4].
+[treeopen] tpu_tb.T1.genblk1[2].
+[treeopen] tpu_tb.T1.genblk1[2].PEij[1].
+[treeopen] tpu_tb.T1.genblk1[2].PEij[4].
+[treeopen] tpu_tb.T1.genblk1[3].PEij[1].
+[treeopen] tpu_tb.T1.genblk1[3].PEij[2].
+[treeopen] tpu_tb.T1.genblk1[3].PEij[4].macij.
+[treeopen] tpu_tb.T1.genblk1[4].PEij[3].macij.
+[treeopen] tpu_tb.T1.genblk1[4].PEij[4].macij.
+[sst_width] 229
+[signals_width] 301
+[sst_expanded] 1
+[sst_vpaned_height] 358
+@420
+[color] 1
+tpu_tb.T1.genblk1[4].PEij[4].macij.clk
+[color] 2
+tpu_tb.T1.genblk1[4].PEij[4].macij.rst
+@200
+-OUTPUT
+@420
+tpu_tb.T1.genblk1[1].PEij[4].macij.so[23:0]
+tpu_tb.T1.genblk1[2].PEij[4].macij.so[23:0]
+tpu_tb.T1.genblk1[3].PEij[4].macij.so[23:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.so[23:0]
+@201
+-MAC11
+@420
+tpu_tb.T1.genblk1[1].PEij[1].macij.di[7:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.wi[7:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.si[23:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.diReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[1].PEij[1].macij.so[23:0]
+@200
+-MAC12
+@420
+tpu_tb.T1.genblk1[1].PEij[2].macij.di[7:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.wi[7:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.si[23:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.diReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.soReg[23:0]
+tpu_tb.T1.genblk1[1].PEij[2].macij.so[23:0]
+@200
+-MAC13
+@420
+tpu_tb.T1.genblk1[1].PEij[3].macij.di[7:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.wi[7:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.si[23:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.diReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[1].PEij[3].macij.so[23:0]
+@200
+-MAC14
+@420
+tpu_tb.T1.genblk1[1].PEij[4].macij.di[7:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.wi[7:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.si[23:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.diReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[1].PEij[4].macij.so[23:0]
+@200
+-MAC41
+@28
+[color] 1
+tpu_tb.T1.genblk1[4].PEij[3].macij.clk
+@420
+tpu_tb.T1.genblk1[4].PEij[1].macij.di[7:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.wi[7:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.si[23:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.diReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[4].PEij[1].macij.so[23:0]
+@200
+-MAC42
+@420
+tpu_tb.T1.genblk1[4].PEij[2].macij.di[7:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.wi[7:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.si[23:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.diReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[4].PEij[2].macij.so[23:0]
+@200
+-MAC43
+@420
+tpu_tb.T1.genblk1[4].PEij[3].macij.di[7:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.wi[7:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.si[23:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.diReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[4].PEij[3].macij.so[23:0]
+@200
+-MAC44
+@420
+tpu_tb.T1.genblk1[4].PEij[4].macij.di[7:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.wi[7:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.si[23:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.diReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[4].PEij[4].macij.so[23:0]
+@28
+[color] 1
+tpu_tb.T1.genblk1[2].PEij[1].macij.clk
+@200
+-MAC21
+@420
+tpu_tb.T1.genblk1[2].PEij[1].macij.di[7:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.wi[7:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.si[23:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.diReg[7:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.wiReg[7:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.soReg_input[23:0]
+tpu_tb.T1.genblk1[2].PEij[1].macij.so[23:0]
+[pattern_trace] 1
+[pattern_trace] 0

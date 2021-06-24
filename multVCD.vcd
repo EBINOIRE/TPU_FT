@@ -1,0 +1,32 @@
+$date
+	Mon Jun 21 19:32:37 2021
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module multSigned_beh_tb $end
+$scope module m1 $end
+$var wire 8 ! x [7:0] $end
+$var wire 8 " y [7:0] $end
+$var wire 16 # po [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b10010110 #
+b1111 "
+b1010 !
+$end
+#50
+b10100 "
+b1111111100111000 #
+b11110110 !
+#100
+b11111111 "
+b1111111111110100 #
+b1100 !
+#150

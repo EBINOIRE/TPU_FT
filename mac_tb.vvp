@@ -1,0 +1,171 @@
+#! /usr/local/Cellar/icarus-verilog/11.0/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/11.0/lib/ivl/va_math.vpi";
+S_0x7fc78d40fd60 .scope module, "adder_beh_tb" "adder_beh_tb" 2 16;
+ .timescale -9 -9;
+v0x7fc78d425c90_0 .var "a", 15 0;
+v0x7fc78d425d40_0 .var "b", 23 0;
+v0x7fc78d425df0_0 .net "o", 23 0, L_0x7fc78d428200;  1 drivers
+S_0x7fc78d40ecf0 .scope module, "a1" "adder" 2 22, 2 2 0, S_0x7fc78d40fd60;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 16 "a";
+    .port_info 1 /INPUT 24 "b";
+    .port_info 2 /OUTPUT 24 "o";
+P_0x7fc78d409420 .param/l "firstInpSize" 0 2 3, +C4<00000000000000000000000000010000>;
+P_0x7fc78d409460 .param/l "outputSize" 0 2 5, +C4<00000000000000000000000000011000>;
+P_0x7fc78d4094a0 .param/l "secondInpSize" 0 2 4, +C4<00000000000000000000000000011000>;
+v0x7fc78d4094e0_0 .net/s *"_ivl_0", 23 0, L_0x7fc78d428100;  1 drivers
+v0x7fc78d425aa0_0 .net/s "a", 15 0, v0x7fc78d425c90_0;  1 drivers
+v0x7fc78d425b40_0 .net/s "b", 23 0, v0x7fc78d425d40_0;  1 drivers
+v0x7fc78d425bd0_0 .net/s "o", 23 0, L_0x7fc78d428200;  alias, 1 drivers
+L_0x7fc78d428100 .extend/s 24, v0x7fc78d425c90_0;
+L_0x7fc78d428200 .arith/sum 24, L_0x7fc78d428100, v0x7fc78d425d40_0;
+S_0x7fc78d40fed0 .scope module, "mac_tb" "mac_tb" 3 22;
+ .timescale -9 -9;
+v0x7fc78d4274f0_0 .var "a", 7 0;
+v0x7fc78d4275e0_0 .var "si", 23 0;
+v0x7fc78d4276b0_0 .net "so", 23 0, L_0x7fc78d428700;  1 drivers
+v0x7fc78d427780_0 .var "w", 7 0;
+S_0x7fc78d425ec0 .scope module, "mac1" "mac" 3 29, 3 2 0, S_0x7fc78d40fed0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 8 "a";
+    .port_info 1 /INPUT 8 "wi";
+    .port_info 2 /INPUT 24 "si";
+    .port_info 3 /OUTPUT 24 "so";
+P_0x7fc78d426080 .param/l "inputWeightSize" 0 3 4, +C4<00000000000000000000000000001000>;
+P_0x7fc78d4260c0 .param/l "outputSize" 0 3 6, +C4<00000000000000000000000000011000>;
+P_0x7fc78d426100 .param/l "parSumSize" 0 3 5, +C4<00000000000000000000000000011000>;
+v0x7fc78d4270f0_0 .net "a", 7 0, v0x7fc78d4274f0_0;  1 drivers
+v0x7fc78d4271a0_0 .net "multOut", 15 0, L_0x7fc78d4284c0;  1 drivers
+v0x7fc78d427270_0 .net "si", 23 0, v0x7fc78d4275e0_0;  1 drivers
+v0x7fc78d427320_0 .net "so", 23 0, L_0x7fc78d428700;  alias, 1 drivers
+v0x7fc78d4273d0_0 .net "wi", 7 0, v0x7fc78d427780_0;  1 drivers
+S_0x7fc78d426360 .scope module, "ADD" "adder" 3 18, 2 2 0, S_0x7fc78d425ec0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 16 "a";
+    .port_info 1 /INPUT 24 "b";
+    .port_info 2 /OUTPUT 24 "o";
+P_0x7fc78d426520 .param/l "firstInpSize" 0 2 3, +C4<0000000000000000000000000000000000000000000000000000000000010000>;
+P_0x7fc78d426560 .param/l "outputSize" 0 2 5, +C4<00000000000000000000000000011000>;
+P_0x7fc78d4265a0 .param/l "secondInpSize" 0 2 4, +C4<00000000000000000000000000011000>;
+v0x7fc78d4267b0_0 .net/s *"_ivl_0", 23 0, L_0x7fc78d4285e0;  1 drivers
+v0x7fc78d426850_0 .net/s "a", 15 0, L_0x7fc78d4284c0;  alias, 1 drivers
+v0x7fc78d4268f0_0 .net/s "b", 23 0, v0x7fc78d4275e0_0;  alias, 1 drivers
+v0x7fc78d426980_0 .net/s "o", 23 0, L_0x7fc78d428700;  alias, 1 drivers
+L_0x7fc78d4285e0 .extend/s 24, L_0x7fc78d4284c0;
+L_0x7fc78d428700 .arith/sum 24, L_0x7fc78d4285e0, v0x7fc78d4275e0_0;
+S_0x7fc78d426a40 .scope module, "MUL" "multSigned" 3 17, 4 2 0, S_0x7fc78d425ec0;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 16 "po";
+P_0x7fc78d426c10 .param/l "size" 0 4 2, +C4<00000000000000000000000000001000>;
+v0x7fc78d426d80_0 .net/s *"_ivl_0", 15 0, L_0x7fc78d428380;  1 drivers
+v0x7fc78d426e30_0 .net/s *"_ivl_2", 15 0, L_0x7fc78d428420;  1 drivers
+v0x7fc78d426ed0_0 .net/s "po", 15 0, L_0x7fc78d4284c0;  alias, 1 drivers
+v0x7fc78d426f60_0 .net/s "x", 7 0, v0x7fc78d4274f0_0;  alias, 1 drivers
+v0x7fc78d426ff0_0 .net/s "y", 7 0, v0x7fc78d427780_0;  alias, 1 drivers
+L_0x7fc78d428380 .extend/s 16, v0x7fc78d4274f0_0;
+L_0x7fc78d428420 .extend/s 16, v0x7fc78d427780_0;
+L_0x7fc78d4284c0 .arith/mult 16, L_0x7fc78d428380, L_0x7fc78d428420;
+S_0x7fc78d40eb80 .scope module, "multSigned_tb" "multSigned_tb" 4 12;
+ .timescale -9 -9;
+v0x7fc78d427ed0_0 .net "po", 15 0, L_0x7fc78d428980;  1 drivers
+v0x7fc78d427f80_0 .var "x", 7 0;
+v0x7fc78d428030_0 .var "y", 7 0;
+S_0x7fc78d427850 .scope module, "m1" "multSigned" 4 17, 4 2 0, S_0x7fc78d40eb80;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 8 "x";
+    .port_info 1 /INPUT 8 "y";
+    .port_info 2 /OUTPUT 16 "po";
+P_0x7fc78d427a10 .param/l "size" 0 4 2, +C4<00000000000000000000000000001000>;
+v0x7fc78d427b60_0 .net/s *"_ivl_0", 15 0, L_0x7fc78d428800;  1 drivers
+v0x7fc78d427c10_0 .net/s *"_ivl_2", 15 0, L_0x7fc78d4288a0;  1 drivers
+v0x7fc78d427cb0_0 .net/s "po", 15 0, L_0x7fc78d428980;  alias, 1 drivers
+v0x7fc78d427d40_0 .net/s "x", 7 0, v0x7fc78d427f80_0;  1 drivers
+v0x7fc78d427dd0_0 .net/s "y", 7 0, v0x7fc78d428030_0;  1 drivers
+L_0x7fc78d428800 .extend/s 16, v0x7fc78d427f80_0;
+L_0x7fc78d4288a0 .extend/s 16, v0x7fc78d428030_0;
+L_0x7fc78d428980 .arith/mult 16, L_0x7fc78d428800, L_0x7fc78d4288a0;
+    .scope S_0x7fc78d40fd60;
+T_0 ;
+    %vpi_call 2 25 "$dumpfile", "adderVCD" {0 0 0};
+    %vpi_call 2 26 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fc78d40ecf0 {0 0 0};
+    %pushi/vec4 10, 0, 16;
+    %store/vec4 v0x7fc78d425c90_0, 0, 16;
+    %pushi/vec4 15, 0, 24;
+    %store/vec4 v0x7fc78d425d40_0, 0, 24;
+    %delay 50, 0;
+    %pushi/vec4 65526, 0, 16;
+    %store/vec4 v0x7fc78d425c90_0, 0, 16;
+    %pushi/vec4 20, 0, 24;
+    %store/vec4 v0x7fc78d425d40_0, 0, 24;
+    %delay 50, 0;
+    %pushi/vec4 12, 0, 16;
+    %store/vec4 v0x7fc78d425c90_0, 0, 16;
+    %pushi/vec4 16777215, 0, 24;
+    %store/vec4 v0x7fc78d425d40_0, 0, 24;
+    %delay 50, 0;
+    %end;
+    .thread T_0;
+    .scope S_0x7fc78d40fed0;
+T_1 ;
+    %vpi_call 3 32 "$dumpfile", "macVCD" {0 0 0};
+    %vpi_call 3 33 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fc78d425ec0 {0 0 0};
+    %pushi/vec4 10, 0, 8;
+    %store/vec4 v0x7fc78d4274f0_0, 0, 8;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x7fc78d427780_0, 0, 8;
+    %pushi/vec4 15, 0, 24;
+    %store/vec4 v0x7fc78d4275e0_0, 0, 24;
+    %delay 50, 0;
+    %pushi/vec4 246, 0, 8;
+    %store/vec4 v0x7fc78d4274f0_0, 0, 8;
+    %pushi/vec4 20, 0, 8;
+    %store/vec4 v0x7fc78d427780_0, 0, 8;
+    %pushi/vec4 15, 0, 24;
+    %store/vec4 v0x7fc78d4275e0_0, 0, 24;
+    %delay 50, 0;
+    %pushi/vec4 12, 0, 8;
+    %store/vec4 v0x7fc78d4274f0_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fc78d427780_0, 0, 8;
+    %pushi/vec4 15, 0, 24;
+    %store/vec4 v0x7fc78d4275e0_0, 0, 24;
+    %delay 50, 0;
+    %end;
+    .thread T_1;
+    .scope S_0x7fc78d40eb80;
+T_2 ;
+    %vpi_call 4 20 "$dumpfile", "multVCD" {0 0 0};
+    %vpi_call 4 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fc78d427850 {0 0 0};
+    %pushi/vec4 10, 0, 8;
+    %store/vec4 v0x7fc78d427f80_0, 0, 8;
+    %pushi/vec4 15, 0, 8;
+    %store/vec4 v0x7fc78d428030_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 246, 0, 8;
+    %store/vec4 v0x7fc78d427f80_0, 0, 8;
+    %pushi/vec4 20, 0, 8;
+    %store/vec4 v0x7fc78d428030_0, 0, 8;
+    %delay 50, 0;
+    %pushi/vec4 12, 0, 8;
+    %store/vec4 v0x7fc78d427f80_0, 0, 8;
+    %pushi/vec4 255, 0, 8;
+    %store/vec4 v0x7fc78d428030_0, 0, 8;
+    %delay 50, 0;
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "adder.v";
+    "mac.v";
+    "mult_signed.v";
